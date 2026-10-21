@@ -1,0 +1,27 @@
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qnetsim"
+version = "0.1.0"
+description = "A noise-aware quantum network simulator"
+requires-python = ">=3.11"
+dependencies = [
+    "qiskit>=2.0,<3.0",
+    "qiskit-aer>=0.17,<0.18",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "networkx>=3.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

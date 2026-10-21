@@ -1,0 +1,6 @@
+qiskit>=2.0,<3.0
+qiskit-aer>=0.17,<0.18
+numpy>=1.26
+matplotlib>=3.8
+networkx>=3.2
+pytest>=8.0
